@@ -21,3 +21,6 @@ app.listen(PORT,()=>{
     console.log(`🚀 SERVER STARTED ON PORT : ${PORT}`)
     dbConnect();
 })
+
+const userroutes = require ("./Router/userroutes")
+app.use("/user",userroutes)
