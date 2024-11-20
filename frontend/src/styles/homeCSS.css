@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.background {
+    background-image: url('./images/homePageBackground.svg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: auto;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    background-color: #2a2e347b;
+    color: white;
+    padding-block: 20px;
+    max-width: 80vw;
+    height: 40vh;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .text-content {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  /* Your Ride text */
+  .text-content h1 {
+    padding-top: 20px;
+    font-size: 65px;
+    font-weight: 500;
+    margin: 10px;
+    color: #F5B301;
+  }
+
+  /* Our Priority text */
+  .text-content2 h1 {
+    font-size: 65px;
+    font-weight: 500;
+    padding-bottom: 50px;
+    margin: 10px;
+    color: #ffffff;
+  }
+
+  .image-content img {
+    max-width: 100%;
+    height: 320px;
+    border-radius: 8px;
+    max-height: 80vh;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 50vw;
+  }
+
+  .button-booknow button{
+    background-color: white;
+    font-size: 35px;
+    color: black;
+    border: white;
+    border-radius: 5px;
+    margin-left: 100px;
+    padding-inline: 15px;
+    padding-block: 5px;
+  }
+
+  .button-Schedule button{
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 35px;
+    color: #F5B301;
+    border-color: white;
+    border-radius: 5px;
+    margin-left: 100px;
+    padding-inline: 15px;
+    padding-block: 5px;
+  }
+
+  .topDrivers-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+
+.title h1 {
+  font-size: 35px;
+  font-weight: 500;
+  margin: 10px;
+  color: #000000;
+  position: relative;
+}
+
+.title h1::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #F5B301;
+}
