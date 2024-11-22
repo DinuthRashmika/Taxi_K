@@ -3,6 +3,8 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from './containers/Main/HomePage'
 import About from './containers/Main/About';
+import './styles/tailwind.css';
+
 
 function App() {
   return (

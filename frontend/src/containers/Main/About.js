@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBar from "../../components/navbar";
+import Footer from '../../components/footer';
 
 function About() {
   return (
@@ -7,9 +8,13 @@ function About() {
       <NavBar />
       <div className="home-content">
     <div style={{ padding: "20px" }}>
-      <h1>About</h1>
+     
     </div>
+    
+    
+
     </div>
+    <Footer />
     </div>
   )
 }

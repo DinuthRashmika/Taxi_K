@@ -1,0 +1,89 @@
+/* Ensure footer spans the full width */
+.footer {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px 40px;
+    width: 100%; /* Full width */
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  /* Ensure content is properly aligned */
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Each section in the footer */
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .logo-section .footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .logo-section .logo-k {
+    color: #ff9800;
+  }
+  
+  .footer-description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .help-section h3,
+  .branches-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+    font-size: 20px;
+    display: flex; /* Use flexbox for alignment */
+    gap: 10px; /* Space between icons */
+    justify-content: flex-start; /* Align icons from left to right */
+  }
+  
+  .social-icons img {
+    width: 30px; /* Adjust the size of icons */
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  
+  /* Footer bottom section styling */
+  .footer-bottom {
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  /* Sticky footer behavior */
+  html, body {
+    height: 100%; /* Ensure the body fills the viewport */
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make sure the body takes the full viewport height */
+  }
+  
+  #root {
+    flex: 1; /* Allow the main content to expand */
+  }
+  
+  /* Ensure the footer is always at the bottom */
+  .footer {
+    margin-top: auto; /* Push the footer to the bottom of the page */
+  }
+  
