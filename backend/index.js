@@ -3,8 +3,6 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const dbConnect = require('./Config/dbConfig');
 
-
-
 const app = express();
 const PORT = process.env.PORT || 3004;
 dotenv.config();
@@ -24,3 +22,6 @@ app.listen(PORT,()=>{
 
 const userroutes = require ("./Router/userroutes")
 app.use("/user",userroutes)
+
+const contactroute = require ("./Router/contactroute")
+app.use("/contact",contactroute)
