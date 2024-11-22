@@ -11,12 +11,3 @@ exports.addcontact = async (req, res) => {
     }
 }
 
-
-exports.getAllContact = async (req, res) => {
-    try {
-        const allContacts = await Contact.find(); 
-        res.status(200).json(allContacts); 
-    } catch (error) {
-        res.status(500).json({ error: error.message });
-    }
-}

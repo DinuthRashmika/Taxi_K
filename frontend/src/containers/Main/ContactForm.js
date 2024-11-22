@@ -25,7 +25,7 @@ const ContactForm = () => {
     e.preventDefault();
     try {
       // Replace the URL with your API endpoint
-      const response = await axios.post('http://localhost:3004/contact/add', formData);
+      const response = await axios.post('http://localhost:3004/Contact/add', formData);
       console.log(response.data);
       alert('Message sent successfully!');
     } catch (error) {
