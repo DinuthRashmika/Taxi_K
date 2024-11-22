@@ -2,7 +2,7 @@ const Contact = require('../Model/contactmodel');
 
 exports.addcontact = async (req, res) => {
     try {
-        const newContact = new contacts(req.body); 
+        const newContact = new Contact(req.body); 
         await newContact.save();
         res.status(200).json({ success: 'Insert successful' });
     } catch (error) {
@@ -14,7 +14,7 @@ exports.addcontact = async (req, res) => {
 
 exports.getAllContact = async (req, res) => {
     try {
-        const allContacts = await contacts.find(); 
+        const allContacts = await Contact.find(); 
         res.status(200).json(allContacts); 
     } catch (error) {
         res.status(500).json({ error: error.message });
