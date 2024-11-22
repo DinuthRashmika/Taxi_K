@@ -1,0 +1,92 @@
+.navbar {
+    
+
+    background-color: white; /* Yellow background */
+    padding: 10px 0;
+    width: 100%; /* Ensures the navbar spans the full width of the page */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for depth */
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Full width of the navbar container */
+    max-width: 1200px; /* Restrict content width for better alignment */
+    padding: 0 20px; /* Adds padding to the left and right for spacing */
+  }
+  
+  /* Logo Styling */
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .taxi-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .taxi-icon {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+  }
+  
+  .highlight-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f5a623; /* Yellow for 'K' */
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  .nav-link:hover {
+    background-color: #d3d3d3;
+  }
+  
+  .nav-link.active {
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Contact Info and Button */
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .contact-info {
+    font-size: 14px;
+    color: black;
+  }
+  
+  .book-now {
+    padding: 10px 15px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .book-now:hover {
+    background-color: #f5a623;
+    color: white;
+    border: 2px solid #f5a623;
+  }
+  

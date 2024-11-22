@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/homeCSS.css"
-
+import NavBar from "../../components/navbar";
 import homePageContainer from "../../styles/images/homePageContainer.svg"
 import taxiCab from "../../styles/images/Taxicab.png"
 import profilePicture from "../../styles/images/profilePicture.png"
@@ -8,8 +8,8 @@ import profilePicture from "../../styles/images/profilePicture.png"
 const HomePage = () => {
     return (
         <div>
-
-           <div className="background">
+        <NavBar />
+           {/*<div className="background">
                 <div className="container">
                     <div >
                         <div className="text-content">
@@ -55,7 +55,7 @@ const HomePage = () => {
                     <p>Diver’s License Number : 2993-04043</p>
                     <p>Ratings : 4.5</p>
                 </div>
-            </div> 
+            </div> */}
         </div>
     );
 };
