@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from './containers/Main/HomePage'
+import About from './containers/Main/About';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/homePage" element={<HomePage/>} />
+        <Route path="/about" element={<About/>} />
       </Routes>
     </Router>
   );
