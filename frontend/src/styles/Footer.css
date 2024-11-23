@@ -1,89 +1,100 @@
-/* Ensure footer spans the full width */
+/* General Footer Styles */
 .footer {
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 20px 40px;
-    width: 100%; /* Full width */
-    box-sizing: border-box;
-    position: relative;
-  }
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px 40px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 18%;
+}
+
+/* Footer Content */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Footer Sections */
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.logo-section .footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-description {
+  margin-top: 2%;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Need Help Section */
+
+.help-section{
+  margin-left: 10%;
+}
+.help-section h3 {
+ 
+  font-size: 30px; /* Larger font size for "Need Help" */
+  font-weight: 600; /* Increased font weight */
+}
+
+.help-section p {
+  font-size: 16px; /* Slightly larger font size */
   
-  /* Ensure content is properly aligned */
+  margin-bottom: 8px;
+}
+
+.social-icons {
+  margin-top: 10px;
+  font-size: 20px;
+  display: flex;
+  gap: 20px; /* Increased spacing between icons */
+  justify-content: flex-start;
+}
+
+.social-icons img {
+  width: 30px; /* Adjust icon size */
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Our Branches Section */
+.branches-section h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.branches-section p {
+  font-size: 24px;
+  line-height: 1.6;
+  margin-bottom: 5px; /* Add spacing between lines */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background-color: #e0e0e0;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
   .footer-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+      flex-direction: column; /* Stack sections vertically */
+      text-align: center;
   }
-  
-  /* Each section in the footer */
+
   .footer-section {
-    flex: 1;
-    min-width: 250px;
+      margin-bottom: 20px;
   }
-  
-  .logo-section .footer-logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .logo-section .logo-k {
-    color: #ff9800;
-  }
-  
-  .footer-description {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-  
-  .help-section h3,
-  .branches-section h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .social-icons {
-    margin-top: 10px;
-    font-size: 20px;
-    display: flex; /* Use flexbox for alignment */
-    gap: 10px; /* Space between icons */
-    justify-content: flex-start; /* Align icons from left to right */
-  }
-  
-  .social-icons img {
-    width: 30px; /* Adjust the size of icons */
-    height: 30px;
-    cursor: pointer;
-  }
-  
-  
-  /* Footer bottom section styling */
-  .footer-bottom {
-    background-color: #e0e0e0;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-    font-size: 14px;
-  }
-  
-  /* Sticky footer behavior */
-  html, body {
-    height: 100%; /* Ensure the body fills the viewport */
-    margin: 0;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Make sure the body takes the full viewport height */
-  }
-  
-  #root {
-    flex: 1; /* Allow the main content to expand */
-  }
-  
-  /* Ensure the footer is always at the bottom */
-  .footer {
-    margin-top: auto; /* Push the footer to the bottom of the page */
-  }
-  
+}
