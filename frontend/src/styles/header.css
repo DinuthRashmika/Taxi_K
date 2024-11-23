@@ -1,153 +1,138 @@
 .home1 {
-    background-color: #d3d3d3; /* Gray background color */
-    padding: 70px 0; /* Adjust padding for top and bottom */
-    margin: 0; /* Remove margins */
-    text-align: center; /* Center the text and links inside the div */
-    position: relative; /* Relative positioning */
-    width: 100%; /* Ensure full width without exceeding viewport */
-    overflow-x: hidden; /* Prevent horizontal overflow */
-    height: auto; /* Adjust height based on content */
-    box-sizing: border-box; /* Include padding in width calculations */
+  background-color: #d3d3d3;
+  padding: 65px 0;
+  margin: 0;
+  text-align: center;
+  position: fixed; /* Change fixed to relative */
+  top: 13%;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .header-container-about {
-    font-size: 14px; /* Base font size */
-    width: 100%; /* Take the full width */
-    max-width: 1200px; /* Center content with a max width */
-    margin: 0 auto; /* Center the content horizontally */
-    padding: 0 15px; /* Add padding to avoid content touching edges */
-    box-sizing: border-box; /* Include padding in element width */
+  font-size: 14px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin-top: 70px;
 }
 
-/* Styling Links in the About Header */
-.header-container-about a {
-    text-decoration: none; /* Remove underline from links */
-    margin: 0 5px; /* Space between links */
-    word-wrap: break-word; /* Prevent long text from breaking layout */
+.breadcrumbs {
+  font-size: 14px;
+  color: #666;
 }
 
-/* Hover Effect for Links */
-.header-container-about a:hover {
-    text-decoration: underline; /* Underline on hover */
+.breadcrumbs a {
+  text-decoration: none;
+  color: #f5a623;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
 }
 
 .header-container-about h1 {
-    font-size: 24px; /* Adjust font size */
-    font-weight: bold; /* Bold text */
-    color: #333; /* Dark gray color */
-    margin-top: 10px; /* Space above the heading */
-    margin-bottom: 20px; /* Space below the heading */
-    text-align: center; /* Center heading */
-    font-family: 'Arial', sans-serif; /* Font family */
-    line-height: 1.4; /* Line height for readability */
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.4;
 }
 
 /* Breadcrumbs */
 .breadcrumbs {
-    font-size: 14px;
-    color: #666;
+  font-size: 14px;
+  color: #666;
 }
 
 .breadcrumbs a {
-    text-decoration: none;
-    color: #f5a623;
+  text-decoration: none;
+  color: #f5a623;
 }
 
 .breadcrumbs a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* Media Queries for Different Screen Sizes */
-/* Larger Screens */
+/* Media Queries */
 @media (min-width: 1440px) {
-    .header-container-about h1 {
-        font-size: 28px;
-    }
-
-    .header-container-about {
-        font-size: 18px;
-    }
-
-    .header-container-about a {
-        font-size: 16px;
-    }
+  .header-container-about h1 {
+    font-size: 28px;
+  }
+  .header-container-about {
+    font-size: 18px;
+  }
+  .header-container-about a {
+    font-size: 16px;
+  }
 }
 
-/* Laptops */
 @media (min-width: 1024px) and (max-width: 1440px) {
-    .home1 {
-        padding: 20px 0; /* Adjust padding */
-    }
-
-    .header-container-about h1 {
-        font-size: 26px;
-    }
-
-    .header-container-about {
-        font-size: 16px;
-    }
-
-    .header-container-about a {
-        font-size: 15px;
-    }
+  .home1 {
+    padding: 20px 0;
+  }
+  .header-container-about h1 {
+    font-size: 26px;
+  }
+  .header-container-about {
+    font-size: 16px;
+  }
+  .header-container-about a {
+    font-size: 15px;
+  }
 }
 
-/* Tablets */
 @media (max-width: 1024px) {
-    .home1 {
-        padding: 10px 0;
-    }
-
-    .header-container-about h1 {
-        font-size: 22px;
-    }
-
-    .header-container-about {
-        font-size: 14px;
-    }
-
-    .header-container-about a {
-        font-size: 14px;
-    }
+  .home1 {
+    padding: 10px 0;
+  }
+  .header-container-about h1 {
+    font-size: 22px;
+  }
+  .header-container-about {
+    font-size: 14px;
+  }
+  .header-container-about a {
+    font-size: 14px;
+  }
 }
 
-/* Small Tablets and Large Phones */
 @media (max-width: 768px) {
-    .home1 {
-        padding: 8px 0;
-    }
-
-    .header-container-about h1 {
-        font-size: 20px;
-    }
-
-    .header-container-about {
-        font-size: 13px;
-        padding: 0 10px; /* Add side padding to prevent content overflow */
-    }
-
-    .header-container-about a {
-        font-size: 12px;
-    }
+  .home1 {
+    padding: 8px 0;
+  }
+  .header-container-about h1 {
+    font-size: 20px;
+  }
+  .header-container-about {
+    font-size: 13px;
+  }
+  .header-container-about a {
+    font-size: 12px;
+  }
 }
 
-/* Mobile Devices */
 @media (max-width: 480px) {
-    .home1 {
-        padding: 5px 0;
-    }
-
-    .header-container-about h1 {
-        font-size: 18px;
-        margin-bottom: 15px;
-    }
-
-    .header-container-about a {
-        font-size: 11px;
-    }
-
-    .header-container-about {
-        font-size: 12px;
-        padding: 0 10px; /* Ensure padding on smaller screens */
-    }
+  .home1 {
+    padding: 5px 0;
+  }
+  .header-container-about h1 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .header-container-about a {
+    font-size: 11px;
+  }
+  .header-container-about {
+    font-size: 12px;
+  }
 }

@@ -11,12 +11,14 @@ function About() {
       <Header
         title="About Us"
         breadcrumbs={[
-          { text: 'Home', link: './index.html' },
-          { text: 'About Us', link: './About.html' },
+          { text: 'Home', link: './containers/Main/HomePage' },
+          { text: 'About Us', link: './containers/Main/About' },
         ]}
       />
       
     </div>
+
+    
 
     <Footer />
    
