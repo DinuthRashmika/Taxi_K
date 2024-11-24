@@ -1,0 +1,101 @@
+/* Top Banner */
+.top-banner {
+  background-color: #f5a623; /* Yellow color */
+  color: white; /* White text color */
+  text-align: right; /* Align text to the right */
+  font-size: 20px; /* Slightly larger font size */
+  font-weight: bold; /* Make text bold */
+  padding: 10px 20px; /* Add spacing on top, bottom, and sides */
+  position: fixed; /* Fixed at the top */
+  top: 0; /* Aligns to the top */
+  left: 0; /* Start from left edge */
+  right: 0; /* Span the entire width */
+  z-index: 1001; /* Ensure it's above the navbar */
+}
+
+.top-banner-text {
+  display: inline-block;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed; /* Fix navbar below the banner */
+  top: 50px; /* Adjust top position to sit below the banner */
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: white; /* White background */
+  padding: 10px 0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Full width of the navbar container */
+  max-width: 1200px; /* Restrict content width for better alignment */
+  padding: 0 20px; /* Adds padding to the left and right */
+  margin: 0 auto; /* Centers the navbar content */
+}
+
+/* Logo Styling */
+.logo img {
+  width: 40%; /* Adjust the size of the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 25px; /* Increase spacing between links */
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 21px; /* Slightly larger font size */
+  color: black;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.nav-link:hover {
+  background-color: #d3d3d3;
+}
+
+.nav-link.active {
+  background-color: #333;
+  color: white;
+}
+
+/* Contact Info and Button */
+.nav-actions {
+  margin-left: auto; /* Push the content to the right */
+}
+
+.book-now {
+  font-size: 20px;
+  padding: 10px 20px; /* Larger button */
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.book-now:hover {
+  background-color: #f5a623;
+  color: white;
+  border: 2px solid #f5a623;
+}
+
+/* Body adjustment to avoid content overlap
+body {
+  padding-top: 110px; 
+} */

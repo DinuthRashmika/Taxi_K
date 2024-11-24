@@ -1,0 +1,154 @@
+
+.maincontainer {
+    display: flex;
+    padding: 20px;
+    background-color: #f8f9fa;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form container */
+  .formcontainer {
+    flex: 1;
+    min-width: 500px;
+    max-width: 700px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  /* Radio button section */
+  .radiooption {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .radiooption button {
+    font-size: 16px;
+    background-color: #e69500;
+    width: 100px;
+    cursor: pointer;
+
+
+  }
+  
+  .radiooption input {
+    margin-right: 5px;
+  }
+  
+  /* Input field styling */
+  .inputfild {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputfild label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .inputfild span {
+    color: red;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  .inputfild input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  .inputfild textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .inputfild input:focus {
+    border-color: #ffa500;
+    box-shadow: 0px 0px 5px rgba(255, 165, 0, 0.5);
+  }
+ 
+  
+  /* Submit button styling */
+  .submitbutton {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .submitbutton button {
+    background-color: #ffa500;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .submitbutton button:hover {
+    background-color: #e69500;
+    transform: scale(1.05);
+  }
+
+  
+  /* Map container styling */
+  .mapcantainer {
+    flex: 1;
+    min-width: 300px;
+    height: 400px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+
+    
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .maincontainer {
+      flex-direction: column;
+    }
+  
+    .formcontainer {
+      width: 100%;
+    }
+  
+    .mapcantainer {
+      width: 100%;
+      height: 3000px;
+    }
+  }
+  .next{
+display: flex;
+justify-content:space-between;
+align-items: center;
+
+  }
+  .pricing{
+padding: 10px;
+
+padding-right: 30px;  
+ height: 400px;
+    background-color: #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 100%;
+  }
+  .pricing p{
+    font-size: 12px;
+
+  }

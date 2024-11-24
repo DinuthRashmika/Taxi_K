@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   height: 100vh;
   background-color: #ffffff;
@@ -45,7 +45,7 @@ body {
     font-size: 65px;
     font-weight: 500;
     margin: 10px;
-    color: #F5B301;
+    color: #f5b301;
   }
 
   /* Our Priority text */

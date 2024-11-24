@@ -1,0 +1,71 @@
+/* Ensure the header section is visible and styled properly */
+.header-section {
+    margin-top: 50%;
+    background-color: #f5f5f5; /* Light background to differentiate header */
+    padding: 40px 0; /* Add padding for spacing */
+    margin-bottom: 10px; /* Reduced space between header and service content */
+    text-align: center; /* Center text */
+    width: 100%; /* Ensure it spans the full width */
+}
+
+/* Service Content Section */
+.service-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 15px; /* Reduced gap between items */
+    margin-bottom: 10px; /* Reduced margin between service content and footer */
+}
+
+/* Style for individual service items */
+.service-item {
+    display: flex;
+    flex: 1 1 calc(50% - 20px);
+    margin-bottom: 15px; /* Reduced bottom margin */
+    align-items: center;
+    gap: 15px; /* Reduced gap between text and image */
+}
+
+/* Style for the images */
+.service-item img {
+    width: 200px; /* Increased size of the image */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Styling the text inside each service item */
+.service-text {
+    flex: 1;
+}
+
+/* Heading styles */
+.service-text h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Paragraph styles */
+.service-text p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Specific styling for "Ride Sharing" section */
+.service-item.ride-sharing {
+    background-color: #ffcc00; /* Yellow background for Ride Sharing */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Specific styling for "Parcel Delivery" section */
+.service-item.parcel-delivery {
+    background-color: #ffcc00; /* Yellow background for Parcel Delivery */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
