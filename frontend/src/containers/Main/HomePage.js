@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/homeCSS.css"
+import NavBar from "../../components/navbar";
 import homePageContainer from "../../styles/images/homePageContainer.svg"
 import { Navigate, useNavigate } from "react-router-dom";
 import profilePicture from "../../styles/images/profilePicture.png"
@@ -129,7 +130,7 @@ const HomePage = () => {
                         <h1>Our Working Process</h1>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };
