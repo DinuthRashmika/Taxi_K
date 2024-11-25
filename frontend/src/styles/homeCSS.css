@@ -133,21 +133,138 @@ body {
 .profile-container {
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-
+  flex-wrap: wrap;
+  gap: 165px;
 }
 
 .profile {
-  border: 1px solid #ccc;
-  padding: 10px;
-  width: 30%;
+  background-color: #1E2328;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
   text-align: center;
+  padding: 20px;
+  height: 334px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #F7F7F7;
+  font-weight: 600;
 }
 
 .profile img {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  display: flex!important;
+  margin-bottom: 10px;
+}
+
+.profile-details {
+  background-color: #F7F7F7;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    margin-inline: -15px;
+    text-align: left;
+}
+
+.profile-details p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.stars {
+  color: gold;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.stats-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: url('./images/stats.png') center center/cover no-repeat;
+  color: rgb(255, 255, 255);
+}
+
+.stat-item {
+  text-align: center;
+  max-width: 200px;
+}
+
+.stat-item i {
+  font-size: 48px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.stat-item p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.stat-item h2 {
+  font-size: 36px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.icon-experience::before {
+  content: url('./images/experience.svg');
+}
+
+.icon-members::before {
+  content: url('./images/members.svg');
+}
+
+.icon-satisfaction::before {
+  content: url('./images/satisfaction.svg');
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.service {
+  background-color: #1E2328;
+  width: 400px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.service h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #F7F7F7;
+  font-weight: 600;
+}
+
+.service img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.service-details {
+    padding: 16px;
+}
+
+.service-details h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.service-details p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
 }
