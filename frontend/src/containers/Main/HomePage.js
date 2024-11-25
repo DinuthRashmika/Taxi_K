@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react";
 import "../../styles/homeCSS.css"
 import NavBar from "../../components/navbar";
 import Footer from "../../components/footer";
-import homePageContainer from "../../styles/images/homePageContainer.svg"
+import homePageContainer from "../../styles/images/homePageContainer.svg";
 import { Navigate, useNavigate } from "react-router-dom";
-import profilePicture from "../../styles/images/profilePicture.png"
-import taxiCab from "../../styles/images/Taxicab.png"
-import car1 from "../../styles/images/car1.svg"
+import profilePicture from "../../styles/images/profilePicture.png";
+import taxiCab from "../../styles/images/Taxicab.png";
+import car1 from "../../styles/images/car1.svg";
+import car2 from "../../styles/images/car2.svg";
+import car3 from "../../styles/images/car3.svg";
 
 const HomePage = () => {
     const navigate = useNavigate();
@@ -171,14 +173,14 @@ const HomePage = () => {
                             </div>
                         </div>
                         <div className="service">
-                            <img src={car1} alt="John Doiley" />
+                            <img src={car2} alt="John Doiley" />
                             <div className="service-details">
                                 <h2>Rider Sharing</h2>
                                 <p>Whether it's an airport transfer, a car service, or general    transportation</p>
                             </div>
                         </div>
                         <div className="service">
-                            <img src={car1} alt="John Doiley" />
+                            <img src={car3} alt="John Doiley" />
                             <div className="service-details">
                                 <h2>Rider Sharing</h2>
                                 <p>Whether it's an airport transfer, a car service, or general    transportation</p>
