@@ -41,13 +41,13 @@ const ContactForm = () => {
         <p>
           <i className="fab fa-whatsapp contact-icon"></i> 
           <a href="https://wa.me/17135176270" target="_blank" rel="noopener noreferrer">
-            Call Us Anytime +1 (713) 517-6270
+            Call Us Anytime whatsapp +1 (713) 517-6270
           </a>
         </p>
        
         <p>
           <i className="fas fa-phone contact-icon"></i> 
-          <a href="tel:+17135176270">+1 (713) 517-6270</a>
+          <a href="tel:+17135176270">Call Us Anytime +1 (713) 517-6270</a>
         </p>
         
         <p>
