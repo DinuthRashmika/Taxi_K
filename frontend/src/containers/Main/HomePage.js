@@ -22,32 +22,44 @@ const HomePage = () => {
         navigate('/ContactPage');
     };
 
-  useEffect(() => {
-    const startingYear = 2020;
-    const currentYear = new Date().getFullYear();
-    setExperience(currentYear - startingYear);
-  }, []);
+    useEffect(() => {
+        const startingYear = 2020;
+        const currentYear = new Date().getFullYear();
+        setExperience(currentYear - startingYear);
+    }, []);
 
     return (
         <div>
             <NavBar />
-            <div style={{ paddingTop: '1360px' }}>
+            <div style={{ paddingTop: '1580px' }}>
                 <div
                     style={{
+                        position: "relative",
                         height: "100vh",
                         width: "100vw",
-                        backgroundImage: `url('https://th.bing.com/th/id/R.05da3f562c718462602ea8355261ff48?rik=HTjjIx%2bLP8pc%2bQ&pid=ImgRaw&r=0')`, // Replace with your image URL
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "center",
                         alignItems: "center",
                         color: "#fff",
                         textAlign: "center",
-                        backgroundAttachment: "scroll"
                     }}
                 >
+                    <div
+                        style={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            height: "100%",
+                            width: "100%",
+                            backgroundImage: `url('https://th.bing.com/th/id/R.05da3f562c718462602ea8355261ff48?rik=HTjjIx%2bLP8pc%2bQ&pid=ImgRaw&r=0')`, // Replace with your image URL
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                            backgroundAttachment: "scroll",
+                            opacity: 0.8,
+                            zIndex: -1,
+                        }}
+                    />
                     <div className="container">
                         <div>
                             <div className="text-content">
@@ -189,7 +201,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     );
 };
