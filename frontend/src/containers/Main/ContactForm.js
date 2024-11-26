@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import axios from 'axios';  // Import axios for making HTTP requests
-import '../../styles/contactCSS.css';
-
+import axios from 'axios';  
+import '../../styles/contactCSS.css'; 
 const ContactForm = () => {
-  // State for form inputs
+  
   const [formData, setFormData] = useState({
     fullname: '',
     email: '',
@@ -11,7 +10,7 @@ const ContactForm = () => {
     message: ''
   });
 
-  // Handle input changes
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -20,11 +19,11 @@ const ContactForm = () => {
     });
   };
 
-  // Handle form submission
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Replace the URL with your API endpoint
+      
       const response = await axios.post('http://localhost:3004/Contact/add', formData);
       console.log(response.data);
       alert('Message sent successfully!');
@@ -38,9 +37,25 @@ const ContactForm = () => {
     <div className="contact-container">
       <div className="contact-details">
         <h2>Get In Touch</h2>
-        <p><i className="fa fa-whatsapp"></i> Call Us Anytime 0000000000</p>
-        <p><i className="fa fa-phone"></i> 0000000000</p>
-        <p><i className="fa fa-envelope"></i> www@gmail.com</p>
+      
+        <p>
+          <i className="fab fa-whatsapp contact-icon"></i> 
+          <a href="https://wa.me/17135176270" target="_blank" rel="noopener noreferrer">
+            Call Us Anytime whatsapp +1 (713) 517-6270
+          </a>
+        </p>
+       
+        <p>
+          <i className="fas fa-phone contact-icon"></i> 
+          <a href="tel:+17135176270">Call Us Anytime +1 (713) 517-6270</a>
+        </p>
+        
+        <p>
+          <i className="fas fa-envelope contact-icon"></i> 
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=greenhazesmokeshop@gmail.com" target="_blank" rel="noopener noreferrer">
+            greenhazesmokeshop@gmail.com
+          </a>
+        </p>
         <p>Feel free to ask for details, don’t save any questions!</p>
         <p className="contact-description">
           We’re here to help! Whether you need assistance or want to learn more about our products, these are the ways to contact us.

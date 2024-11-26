@@ -67,3 +67,21 @@
   .btn-submit:hover {
     background-color: #d69800;
   }  
+  
+  .contact-details i.contact-icon {
+    font-size: 20px; /* Adjust size */
+    color: #4CAF50; /* Change to preferred color */
+    margin-right: 10px; /* Space between icon and text */
+  }
+  
+  .contact-details a {
+    color: #333; /* Color for the text */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .contact-details a:hover {
+    color: #007bff; /* Hover color */
+    text-decoration: underline; /* Underline on hover */
+  }
+
+  
