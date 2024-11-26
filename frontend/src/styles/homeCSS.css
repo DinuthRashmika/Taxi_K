@@ -6,6 +6,7 @@ body {
   align-items: center;
   height: 100vh;
   background-color: #ffffff;
+  align-items: stretch;
 }
 
 .background {
@@ -21,13 +22,14 @@ body {
   .container {
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
+    /* align-items: stretch; */
     justify-content: center;
     background-color: #2a2e347b;
     color: white;
     padding-block: 20px;
-    max-width: 80vw;
-    height: 40vh;
+    padding-right: 20px;
+    /* max-width: 80vw; */
+    /* height: 40vh; */
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   }
@@ -57,7 +59,7 @@ body {
 
   .image-content img {
     max-width: 100%;
-    height: 320px;
+    height: 385px;
     border-radius: 8px;
     max-height: 80vh;
   }
@@ -70,16 +72,21 @@ body {
     width: 50vw;
   }
 
-  .button-booknow button{
+  .button-booknow button {
     background-color: white;
     font-size: 35px;
     color: black;
-    border: white;
+    border: none;
     border-radius: 5px;
     margin-left: 100px;
     padding-inline: 15px;
     padding-block: 5px;
-  }
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
 
   .button-Schedule button{
     background-color: rgba(255, 255, 255, 0);
@@ -90,9 +97,15 @@ body {
     margin-left: 100px;
     padding-inline: 15px;
     padding-block: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
   }
 
-  .topDrivers-container {
+  .title-container {
+    padding-top: 15px;
+    padding-bottom: 15px;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -113,6 +126,145 @@ body {
   bottom: -5px;
   left: 0;
   width: 100%;
-  height: 5px;
+  height: 3.5px;
   background-color: #F5B301;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 165px;
+}
+
+.profile {
+  background-color: #1E2328;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  height: 334px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #F7F7F7;
+  font-weight: 600;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  display: flex!important;
+  margin-bottom: 10px;
+}
+
+.profile-details {
+  background-color: #F7F7F7;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    margin-inline: -15px;
+    text-align: left;
+}
+
+.profile-details p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.stars {
+  color: gold;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.stats-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: url('./images/stats.png') center center/cover no-repeat;
+  color: rgb(255, 255, 255);
+}
+
+.stat-item {
+  text-align: center;
+  max-width: 200px;
+}
+
+.stat-item i {
+  font-size: 48px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.stat-item p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.stat-item h2 {
+  font-size: 36px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.icon-experience::before {
+  content: url('./images/experience.svg');
+}
+
+.icon-members::before {
+  content: url('./images/members.svg');
+}
+
+.icon-satisfaction::before {
+  content: url('./images/satisfaction.svg');
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.service {
+  background-color: #1E2328;
+  width: 400px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.service h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #F7F7F7;
+  font-weight: 600;
+}
+
+.service img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.service-details {
+    padding: 16px;
+}
+
+.service-details h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.service-details p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
 }
