@@ -1,8 +1,12 @@
 .contact-container {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 30px;
     background-color: #f4f4f4;
+    margin-top: 250px;
+    max-width: 1400px;
+    margin-left: 80px;
+    
   }
   
   .contact-details {
@@ -28,6 +32,8 @@
   
   .contact-form {
     flex: 1;
+    font-weight: bold;
+    color: #333;
   }
   
   .contact-form h2 {
@@ -69,7 +75,7 @@
   }  
   
   .contact-details i.contact-icon {
-    font-size: 20px; /* Adjust size */
+    font-size: 20px; 
     color: #4CAF50; /* Change to preferred color */
     margin-right: 10px; /* Space between icon and text */
   }
@@ -83,5 +89,23 @@
     color: #007bff; /* Hover color */
     text-decoration: underline; /* Underline on hover */
   }
-
+ 
+  .highlighted-text {
+    padding-top: 40px;
+    font-size: 55px; /* Adjust size as needed */
+    color: #666; /* Subtle gray color */
+    font-weight: bold; /* Make it stand out */
+    margin: 15px 0; /* Add spacing around the text */
+    text-align: center; /* Center-align text */
+    line-height: 1.6; /* Improve readability */
+  }
   
+  .get{
+    font-weight: bold;
+    color: #333;
+    
+  }
+
+  .com{
+     font-weight: 550;
+  }

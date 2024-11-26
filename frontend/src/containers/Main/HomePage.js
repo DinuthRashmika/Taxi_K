@@ -142,7 +142,6 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div>
                     <div className="title-container">
