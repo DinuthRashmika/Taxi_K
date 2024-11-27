@@ -1,19 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { NavLink } from 'react-router-dom'; // Import NavLink for routing
 import '../styles/navbarCSS.css';
 import logo from '../styles/images/logo.png';
 
 function NavBar() {
-  // State for active link
-  const [activeLink, setActiveLink] = useState('home');
-
-  // Function to handle click and set the active link
-  const handleLinkClick = (link) => {
-    setActiveLink(link);
-  };
-
   return (
     <>
-      {/* New Yellow Div */}
+      {/* Top Banner */}
       <div className="top-banner">
         <span className="top-banner-text">Call us: +34 324093438</span>
       </div>
@@ -32,34 +25,38 @@ function NavBar() {
 
           {/* Navigation Links */}
           <div className="nav-links">
-            <a
-              href="#home"
-              className={`nav-link ${activeLink === 'home' ? 'active' : ''}`}
-              onClick={() => handleLinkClick('home')}
+            <NavLink
+              to="/homePage"
+              className="nav-link"
+              activeClassName="active"
+              aria-label="Go to Home"
             >
               Home
-            </a>
-            <a
-              href="#about"
-              className={`nav-link ${activeLink === 'about' ? 'active' : ''}`}
-              onClick={() => handleLinkClick('about')}
+            </NavLink>
+            <NavLink
+              to="/AboutUs"
+              className="nav-link"
+              activeClassName="active"
+              aria-label="Go to About Us"
             >
               About Us
-            </a>
-            <a
-              href="#contact"
-              className={`nav-link ${activeLink === 'contact' ? 'active' : ''}`}
-              onClick={() => handleLinkClick('contact')}
+            </NavLink>
+            <NavLink
+              to="/ContactPage"
+              className="nav-link"
+              activeClassName="active"
+              aria-label="Go to Contact Us"
             >
               Contact Us
-            </a>
-            <a
-              href="#services"
-              className={`nav-link ${activeLink === 'services' ? 'active' : ''}`}
-              onClick={() => handleLinkClick('services')}
+            </NavLink>
+            <NavLink
+              to="/service"
+              className="nav-link"
+              activeClassName="active"
+              aria-label="Go to Services"
             >
               Services
-            </a>
+            </NavLink>
           </div>
 
           {/* Contact and Button */}
