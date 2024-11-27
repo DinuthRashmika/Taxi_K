@@ -22,174 +22,221 @@ const HomePage = () => {
         navigate('/ContactPage');
     };
 
-  useEffect(() => {
-    const startingYear = 2020;
-    const currentYear = new Date().getFullYear();
-    setExperience(currentYear - startingYear);
-  }, []);
+    useEffect(() => {
+        const startingYear = 2020;
+        const currentYear = new Date().getFullYear();
+        setExperience(currentYear - startingYear);
+    }, []);
 
     return (
         <div>
-            <NavBar />
-            <div style={{ paddingTop: '1360px' }}>
-                <div
-                    style={{
-                        height: "100vh",
-                        width: "100vw",
-                        backgroundImage: `url('https://th.bing.com/th/id/R.05da3f562c718462602ea8355261ff48?rik=HTjjIx%2bLP8pc%2bQ&pid=ImgRaw&r=0')`, // Replace with your image URL
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        color: "#fff",
-                        textAlign: "center",
-                        backgroundAttachment: "scroll"
-                    }}
-                >
-                    <div className="container">
-                        <div>
-                            <div className="text-content">
+            <div className=""><NavBar /></div>
+            <div className="">
+                <div style={{ paddingTop: '1970px' }}>
+                    <div
+                        style={{
+                            position: "relative",
+                            height: "100vh",
+                            width: "100vw",
+                            display: "flex",
+                            flexDirection: "column",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            color: "#fff",
+                            textAlign: "center",
+                        }}
+                    >
+                        <div
+                            style={{
+                                position: "absolute",
+                                top: 0,
+                                left: 0,
+                                height: "100%",
+                                width: "100%",
+                                backgroundImage: `url('https://th.bing.com/th/id/R.05da3f562c718462602ea8355261ff48?rik=HTjjIx%2bLP8pc%2bQ&pid=ImgRaw&r=0')`, // Replace with your image URL
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                                backgroundAttachment: "scroll",
+                                opacity: 0.8,
+                                zIndex: -1
+                            }}
+                        />
+                        <div className="container">
+                            <div>
                                 <div className="text-content">
-                                    <h1>Your Ride...</h1>
-                                </div>
-                                <div className="text-content2">
-                                    <h1>Our Priority...</h1>
-                                </div>
-                                <div className="button-container">
-                                    <div className="button-booknow">
-                                        <button
-                                            onClick={handleButtonClick1}
-                                        >
-                                            Book Now
-                                        </button>
+                                    <div className="text-content">
+                                        <h1>Your Ride...</h1>
                                     </div>
-                                    <div className="button-Schedule">
-                                        <button
-                                            onClick={handleButtonClick2}
-                                        >
-                                            Schedule A Trip
-                                        </button>
+                                    <div className="text-content2">
+                                        <h1>Our Priority...</h1>
+                                    </div>
+                                    <div className="button-container">
+                                        <div className="button-booknow">
+                                            <button
+                                                onClick={handleButtonClick1}
+                                            >
+                                                Book Now
+                                            </button>
+                                        </div>
+                                        <div className="button-Schedule">
+                                            <button
+                                                onClick={handleButtonClick2}
+                                            >
+                                                Schedule A Trip
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="image-content">
-                            <img src={homePageContainer} alt="Sample" />
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div className="title-container">
-                        <div className="">
-                            <img src={taxiCab} alt="Sample" />
-                        </div>
-                        <div className="title">
-                            <h1>Top Drivers</h1>
+                            <div className="image-content">
+                                <img src={homePageContainer} alt="Sample" />
+                            </div>
                         </div>
                     </div>
-                    <div className="profile-container">
-                        <div className="profile">
-                            <h2>John Doiley</h2>
-                            <img src={profilePicture} alt="John Doiley" />
-                            <div className="profile-details">
-                                <p><strong>Age</strong>: 25</p>
-                                <p><strong>Experience</strong>: <span className="highlight">5 Years</span></p>
-                                <p><strong>Vehicle Number</strong>: 68-f-gsj</p>
-                                <p><strong>Driver’s License Number</strong>: 2993-04043</p>
-                                <p><strong>Ratings</strong>: 4.5
-                                    <span className="stars">★★★★★</span>
+                    <div>
+                        <div className="title-container">
+                            <div className="">
+                                <img src={taxiCab} alt="Sample" />
+                            </div>
+                            <div className="title">
+                                <h1>Top Drivers</h1>
+                            </div>
+                        </div>
+                        <div className="profile-container">
+                            <div className="profile">
+                                <h2>John Doiley</h2>
+                                <img src={profilePicture} alt="John Doiley" />
+                                <div className="profile-details">
+                                    <p><strong>Age</strong>: 25</p>
+                                    <p><strong>Experience</strong>: <span className="highlight">5 Years</span></p>
+                                    <p><strong>Vehicle Number</strong>: 68-f-gsj</p>
+                                    <p><strong>Driver’s License Number</strong>: 2993-04043</p>
+                                    <p><strong>Ratings</strong>: 4.5
+                                        <span className="stars">★★★★★</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="profile">
+                                <h2>John Doiley</h2>
+                                <img src={profilePicture} alt="John Doiley" />
+                                <div className="profile-details">
+                                    <p><strong>Age</strong>: 25</p>
+                                    <p><strong>Experience</strong>: <span className="highlight">5 Years</span></p>
+                                    <p><strong>Vehicle Number</strong>: 68-f-gsj</p>
+                                    <p><strong>Driver’s License Number</strong>: 2993-04043</p>
+                                    <p><strong>Ratings</strong>: 4.5
+                                        <span className="stars">★★★★★</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="profile">
+                                <h2>John Doiley</h2>
+                                <img src={profilePicture} alt="John Doiley" />
+                                <div className="profile-details">
+                                    <p><strong>Age</strong>: 25</p>
+                                    <p><strong>Experience</strong>: <span className="highlight">5 Years</span></p>
+                                    <p><strong>Vehicle Number</strong>: 68-f-gsj</p>
+                                    <p><strong>Driver’s License Number</strong>: 2993-04043</p>
+                                    <p><strong>Ratings</strong>: 4.5
+                                        <span className="stars">★★★★★</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="title-container">
+                            <div className="title">
+                                <h1>Our Working Process</h1>
+                            </div>
+                        </div>
+                        <div className="process-container">
+                            <div className="process">
+                                <div className="process-icon">🚗</div>
+                                <h3>Book Your Ride</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur. Tristique fusce feugiat
+                                    lobortis dignissim donec tortor tincidunt. Urna nunc integer nec sed.
+                                </p>
+                            </div>
+                            <div className="process">
+                                <div className="process-icon">👤</div>
+                                <h3>Get a Driver</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur. Tristique fusce feugiat
+                                    lobortis dignissim donec tortor tincidunt. Urna nunc integer nec sed.
+                                </p>
+                            </div>
+                            <div className="process">
+                                <div className="process-icon">🧳</div>
+                                <h3>Enjoy Your Journey</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur. Tristique fusce feugiat
+                                    lobortis dignissim donec tortor tincidunt. Urna nunc integer nec sed.
+                                </p>
+                            </div>
+                            <div className="process">
+                                <div className="process-icon">💳</div>
+                                <h3>Make Payment</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur. Tristique fusce feugiat
+                                    lobortis dignissim donec tortor tincidunt. Urna nunc integer nec sed.
                                 </p>
                             </div>
                         </div>
-                        <div className="profile">
-                            <h2>John Doiley</h2>
-                            <img src={profilePicture} alt="John Doiley" />
-                            <div className="profile-details">
-                                <p><strong>Age</strong>: 25</p>
-                                <p><strong>Experience</strong>: <span className="highlight">5 Years</span></p>
-                                <p><strong>Vehicle Number</strong>: 68-f-gsj</p>
-                                <p><strong>Driver’s License Number</strong>: 2993-04043</p>
-                                <p><strong>Ratings</strong>: 4.5
-                                    <span className="stars">★★★★★</span>
-                                </p>
+                    </div>
+                    <div className="">
+                        <div className="stats-section">
+                            <div className="stat-item">
+                                <i className="icon icon-experience"></i>
+                                <p><strong>Years Of Experience</strong></p>
+                                <h2>{experience} +</h2>
                             </div>
-                        </div>
-                        <div className="profile">
-                            <h2>John Doiley</h2>
-                            <img src={profilePicture} alt="John Doiley" />
-                            <div className="profile-details">
-                                <p><strong>Age</strong>: 25</p>
-                                <p><strong>Experience</strong>: <span className="highlight">5 Years</span></p>
-                                <p><strong>Vehicle Number</strong>: 68-f-gsj</p>
-                                <p><strong>Driver’s License Number</strong>: 2993-04043</p>
-                                <p><strong>Ratings</strong>: 4.5
-                                    <span className="stars">★★★★★</span>
-                                </p>
+                            <div className="stat-item">
+                                <i className="icon icon-members"></i>
+                                <p><strong>Members</strong></p>
+                                <h2>6 +</h2>
+                            </div>
+                            <div className="stat-item">
+                                <i className="icon icon-satisfaction"></i>
+                                <p><strong>Client Satisfaction</strong></p>
+                                <h2>450 +</h2>
                             </div>
                         </div>
                     </div>
-
-                </div>
-                <div>
-                    <div className="title-container">
-                        <div className="title">
-                            <h1>Our Working Process</h1>
-                        </div>
-                    </div>
-                </div>
-                <div className="">
-                    <div className="stats-section">
-                        <div className="stat-item">
-                            <i className="icon icon-experience"></i>
-                            <p><strong>Years Of Experience</strong></p>
-                            <h2>{experience} +</h2>
-                        </div>
-                        <div className="stat-item">
-                            <i className="icon icon-members"></i>
-                            <p><strong>Members</strong></p>
-                            <h2>6 +</h2>
-                        </div>
-                        <div className="stat-item">
-                            <i className="icon icon-satisfaction"></i>
-                            <p><strong>Client Satisfaction</strong></p>
-                            <h2>450 +</h2>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div className="title-container">
-                        <div className="title">
-                            <h1>Our Services</h1>
-                        </div>
-                    </div>
-                    <div className="service-container">
-                        <div className="service">
-                            <img src={car1} alt="John Doiley" />
-                            <div className="service-details">
-                                <h2>Rider Sharing</h2>
-                                <p>Whether it's an airport transfer, a car service, or general    transportation</p>
+                    <div>
+                        <div className="title-container">
+                            <div className="title">
+                                <h1>Our Services</h1>
                             </div>
                         </div>
-                        <div className="service">
-                            <img src={car2} alt="John Doiley" />
-                            <div className="service-details">
-                                <h2>Rider Sharing</h2>
-                                <p>Whether it's an airport transfer, a car service, or general    transportation</p>
+                        <div className="service-container">
+                            <div className="service">
+                                <img src={car1} alt="John Doiley" />
+                                <div className="service-details">
+                                    <h2>Rider Sharing</h2>
+                                    <p>Whether it's an airport transfer, a car service, or general    transportation</p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="service">
-                            <img src={car3} alt="John Doiley" />
-                            <div className="service-details">
-                                <h2>Rider Sharing</h2>
-                                <p>Whether it's an airport transfer, a car service, or general    transportation</p>
+                            <div className="service">
+                                <img src={car2} alt="John Doiley" />
+                                <div className="service-details">
+                                    <h2>Rider Sharing</h2>
+                                    <p>Whether it's an airport transfer, a car service, or general    transportation</p>
+                                </div>
+                            </div>
+                            <div className="service">
+                                <img src={car3} alt="John Doiley" />
+                                <div className="service-details">
+                                    <h2>Rider Sharing</h2>
+                                    <p>Whether it's an airport transfer, a car service, or general    transportation</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     );
 };
