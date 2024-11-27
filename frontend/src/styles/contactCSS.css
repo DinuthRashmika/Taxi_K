@@ -12,6 +12,8 @@
   .contact-details {
     flex: 1;
     margin-right: 40px;
+    margin-left: -20px;
+    
   }
   
   .contact-details h2 {
@@ -108,4 +110,28 @@
 
   .com{
      font-weight: 550;
+  }
+
+  .whatsappp{
+    width: 30px;
+    height: 100px;
+    position: relative; 
+    top: 50px; 
+    left: 5px; 
+  }
+
+  .emaill{
+    width: 35px;
+    height: 100px;
+    position: relative; 
+    top: 133px; 
+    left: -55px; 
+  }
+
+  .calll{
+    width: 30px;
+    height: 100px;
+    position: relative; 
+    top: 93px; 
+    left: -25px; 
   }

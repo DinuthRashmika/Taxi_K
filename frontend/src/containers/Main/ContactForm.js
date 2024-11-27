@@ -3,6 +3,10 @@ import axios from 'axios';
 import NavBar from "../../components/navbar";
 import Footer from "../../components/footer";
 import '../../styles/contactCSS.css';
+import whatsappp from '../../styles/images/whatsappp.png'
+import calll from '../../styles/images/calll.png'
+import emaill from '../../styles/images/emaill.png'
+
 const ContactForm = () => {
 
   const [formData, setFormData] = useState({
@@ -38,14 +42,28 @@ const ContactForm = () => {
   return (
     <div>
       <NavBar />
+
       <div className="contact-container">
+        <div className="whatsappp">
+          <img src={whatsappp} alt="Taxi Logo"  />
+        </div>
+
+        <div className="calll">
+          <img src={calll} alt="Taxi Logo"  />
+        </div>
+
+        <div className="emaill">
+          <img src={emaill} alt="Taxi Logo"/>
+        </div>
         <div className="contact-details">
+
           <h2 className='get'>Get In Touch</h2>
+
+
           <div className='com'>
             <p>
-              <i className="fab fa-whatsapp contact-icon"></i>
               <a href="https://wa.me/17135176270" target="_blank" rel="noopener noreferrer">
-                Call Us Anytime whatsapp +1 (713) 517-6270
+                &nbsp;&nbsp;Call Us Anytime whatsapp +1 (713) 517-6270
               </a>
             </p>
 
