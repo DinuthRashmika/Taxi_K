@@ -8,6 +8,7 @@ import ContactForm from './containers/Main/ContactForm'
 import AboutUs from './containers/Main/AboutUs';
 import AboutUsSpanish from './containers/Main/AboutUsSpanish'
 import ContactFormSpanish from './containers/Main/ContactFormSpanish'
+import ServicePageSpanish from './containers/Main/ServicePageSpanish'
 
 function App() {
   return (
@@ -32,6 +33,10 @@ function App() {
 
       <Routes>
         <Route path="/ContactPageSpanish" element={<ContactFormSpanish/>} />
+      </Routes>
+
+      <Routes>
+        <Route path="/serviceSpanish" element={<ServicePageSpanish/>} />
       </Routes>
 
     </Router>
