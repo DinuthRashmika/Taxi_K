@@ -6,6 +6,9 @@ import './styles/tailwind.css';
 import Services from './containers/Main/ServicePage';
 import ContactForm from './containers/Main/ContactForm'
 import AboutUs from './containers/Main/AboutUs';
+import AboutUsSpanish from './containers/Main/AboutUsSpanish'
+import ContactFormSpanish from './containers/Main/ContactFormSpanish'
+import ServicePageSpanish from './containers/Main/ServicePageSpanish'
 
 function App() {
   return (
@@ -22,6 +25,18 @@ function App() {
 
       <Routes>
         <Route path="/AboutUs" element={<AboutUs/>} />
+      </Routes>
+
+      <Routes>
+        <Route path="/AboutUsSpanish" element={<AboutUsSpanish/>} />
+      </Routes>
+
+      <Routes>
+        <Route path="/ContactPageSpanish" element={<ContactFormSpanish/>} />
+      </Routes>
+
+      <Routes>
+        <Route path="/serviceSpanish" element={<ServicePageSpanish/>} />
       </Routes>
 
     </Router>
